@@ -1,11 +1,38 @@
 .App {
-  
+}
+
+input:focus, button:focus{
+  border: none;
+  outline: none;
+  scale: 0.98;
+}
+
+.content {
+  max-width: 1024px;
+  margin: auto;
+}
+
+.center{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.page-title {
+  margin-top: 20px;
+  margin-bottom: 30px;
 }
 
 nav ul {
+  box-sizing: border-box;
+
   list-style: none;
   margin: 0;
-  padding: 0;
+  padding: 15px 30px;
+  height: 55px;
+  background: #215cff;
+
 }
 
 nav li {
@@ -15,4 +42,63 @@ nav li {
 
 nav a {
   text-decoration: none;
+  color: #ffffff;
 }
+
+
+/* search bar */
+
+.input-search{
+  width: 300px;
+  height: 40px;
+  margin-top: 20px;
+  box-sizing: border-box;
+  border: none;
+  background: #dadada;
+  border-radius: 8px;
+  padding: 10px;
+}
+
+/* /card list / */
+
+.card-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  grid-gap: 20px;
+  margin-bottom: 35px;
+}
+
+/* card */
+
+.card {
+  width: 100%;
+  height: 100%;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  transition: 0.3s;
+  padding-bottom: 6px;
+}
+.card img{
+  width: 100%;
+}
+.card .card-title {
+  margin: 0px 0px;
+  font-size: 21px;
+}
+
+.card .btn-primary {
+  width: 100%;
+  height: 40px;
+  outline: none;
+  border: none;
+  background: #215cff;
+  color: #fff;
+  margin-bottom: 10xp;
+}
+.card:hover {
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+}
+
+.card-body {
+  padding: 2px 16px;
+}
+
